@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<style>
+     body{
+        background-image:url(static/bgmmmm.jpg);
+        background-size:cover;
+     }
+     img{
+      height:350px;
+      width:400px;
+      border:1px solid green;
+      float:left;
+      margin-left:5%;
+
+     }
+     .head{
+    width:700px;
+    height:100px;
+    margin:70px 1px 5px 1px;
+    font-size:50px;
+    text-align:center;
+    color:white;
+    }
+
+    h1{
+    color:white;
+    }
+
+    h2{
+    width:800px;
+    height:50px;
+    margin-top:20px 1px 5px 1px;
+    font-size:30px;
+<!--    text-align:center;-->
+    color:white;
+      margin-left:5%;
+    }
+    .maindiv{
+      display:flex;
+  flex-direction:column;
+  }
+
+</style>
+<body>
+<div class="head">
+<header class="text" style="font-size:33px; text-align:center; text-color:white;">
+
+        <h1 >
+            <b>MONKEY POX DISEASE DETECTION</b>
+        </h1>
+
+</header>
+</div>
+
+<div class="maindiv">
+
+    <div class="img">
+       <img src="static/example.jpg"  >
+    </div>
+
+    <div class="text-white" style="text-align:left">
+    {% if res %}
+    <h2>Detected disease is {{ res}}</h2>
+     {% endif %}
+</div>
+</div>
+
+</body>
+</html>
